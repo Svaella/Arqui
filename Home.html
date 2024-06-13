@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        header a:hover {
+            background-color: #367c39;
+        }
+
+        .hero {
+            background-image: url("hero_image.jpg"); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        .properties {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .property {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 30%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .property img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .property .info {
+            padding: 15px;
+        }
+
+        .property .info h2 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .property .info p {
+            margin-bottom: 10px;
+        }
+
+        .property .info .price {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+        }
+
+        button:hover {
+            background-color: #367c39;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Real Estate</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Herramientas</a>
+            <a href="#">Propiedades</a>
+            <a href="#">Educación</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>TODO LO QUE NECESITAS EN UN SOLO LUGAR</h1>
+    </div>
+
+    <div class="properties">
+        <div class="property">
+            <img src="property1.jpg" alt="Property 1">
+            <div class="info">
+                <h2>Presidential Towers</h2>
+                <p>555 W Madison St, Chicago, IL 60661</p>
+                <p class="price">Estudio - 2 habitaciones | $1,620 - $5,440</p>
+            </div>
+        </div>
+
+        <div class="property">
+            <img src="property2.jpg" alt="Property 2">
+            <div class="info">
+                <h2>Lake Meadows</h2>
+                <p>3233 S King, Chicago, IL 60616</p>
+                <p class="price">Estudio - 3 habitaciones | $894 - $14,129</p>
+            </div>
+        </div>
+
+        <div class="property">
+            <img src="property3.jpg" alt="Property 3">
+            <div class="info">
+                <h2>The Residences at NewCity</h2>
+                <p>1457 N Halsted St, Chicago, IL 60642</p>
+                <p class="price">Estudio - 2 habitaciones | $2,694 - $4,380</p>
+            </div>
+        </div>
+    </div>
+
+    <button>VER MAS</button>
+
+    <footer>
+        <p>&copy; 2023 Real Estate Website</p>
+    </footer>
+</body>
+</html>
